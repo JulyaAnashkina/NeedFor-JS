@@ -8,7 +8,7 @@ const car = document.createElement('div');
 
 const audio = document.createElement('audio');
 // const audio = document.createElement('embed');
-audio.src = '../audio/audio.mp3';
+audio.src = './audio/audio.mp3';
 audio.type = 'audio/mp3';
 audio.style.cssText = `position: absolute; 
                     top: -1000px;`;
