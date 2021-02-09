@@ -8,7 +8,7 @@ const car = document.createElement('div');
 
 const audio = document.createElement('audio');
 // const audio = document.createElement('embed');
-audio.src = '../audio/audio.mp3';
+audio.src = './audio/audio.mp3';
 audio.type = 'audio/mp3';
 audio.style.cssText = `position: absolute; 
                     top: -1000px;`;
@@ -55,7 +55,7 @@ const startGame = () => {
         enemy.y = -100 * setting.traffic * (i + 1);
         enemy.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + 'px';
         const randomEnemy = Math.floor(Math.random() * MAX_ENEMY) + 1;
-        enemy.style.background = `transparent url(../img/enemy${randomEnemy}.png) center / cover no-repeat`;
+        enemy.style.background = `transparent url(./img/enemy${randomEnemy}.png) center / cover no-repeat`;
         enemy.style.top = enemy.y + 'px';
         gameArea.append(enemy);
         // gameArea.appendChild(enemy);
